@@ -1,0 +1,93 @@
+﻿<aside class="search-wrapper">
+    <form action="@Url.Action("Busca","Home")" class="center center-head">
+        <input type="text" name="search" class="input" placeholder="Digite sua busca">
+        <button type="submit" class="fas fa-search"></button>
+    </form>
+</aside>
+<header class="main-header">
+    <div class="mask-menu"></div>
+    <div class="center center-head">
+        <a href="@Url.Action("Index","Home")">
+            <img src="~/Content/images/logo.png" alt="Colégio Academia" class="main-logo">
+        </a>
+        <i class="fas fa-bars open-menu-mobile"></i>
+        <div class="right-header">
+            <div class="top-bar">
+                <p class="contact-info"><i class="fas fa-phone-square"></i>(32) 2102-7700</p>
+                <p class="contact-info"><i class="fas fa-envelope-square"></i>academia@academia.com.br</p>
+                <a href="http://www.svdesdeva.com.br/" target="_blank" class="link-esdeva">ACESSE: www.svdesdeva.com.br</a>
+                <div class="social-links">
+                    <a href="https://www.flickr.com/photos/150788219@N04" target="_blank" class="fab fa-flickr"></a>
+                    <a href="https://www.facebook.com/colegioacademiajf" target="_blank" class="fab fa-facebook-square"></a>
+                    <a href="https://www.instagram.com/colegioacademiajf/" target="_blank" class="fab fa-instagram"></a>
+                    <a href="https://www.youtube.com/channel/UCifuK1JkiYNvafAIdMZxoVw" target="_blank" class="fab fa-youtube"></a>
+                </div>
+                <i class="open-search fas fa-search"></i>
+            </div>
+
+            <div class="row">
+                <nav class="main-menu">
+                    <div class="item">
+                        O Colégio
+                        <div class="sub-menu">
+                            <a href="@Url.Action("Trajetoria","Colegio")">Trajetória</a>
+                            <a href="@Url.Action("Index","Colegio")">Missão, Visão e Valores</a>
+                            <a href="@Url.Action("Mantenedora","Colegio")">Mantenedora</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Ensino
+                        <div class="sub-menu w130">
+                            <a href="@Url.Action("Index", "Ensino", new { id = 1 })">Educação Infantil</a>
+                            <a href="@Url.Action("Index", "Ensino", new { id = 2 })">Fundamental Anos Iniciais</a>
+                            <a href="@Url.Action("Index", "Ensino", new { id = 3 })">Fundamental Anos Finais</a>
+                            <a href="@Url.Action("Index", "Ensino", new { id = 4 })">Ensino Médio</a>
+                            <a href="@Url.Action("ExAlunos", "Ensino")">Ex-Alunos</a>
+                            <a href="@Url.Action("Index", "Ensino", new { id = 5 })">Tempo Integral</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Serviços
+                        <div class="sub-menu">
+                            <a href="@Url.Action("ProjetoPedagogico", "Servicos")">Projeto Pedagógico</a>
+                            <a href="@Url.Action("Poliedro", "Servicos")">Poliedro</a>
+                            <a href="@Url.Action("Index", "Atividades")">Atividades Extracurriculares</a>
+                            <a href="@Url.Action("PortalDoEnsino", "Servicos")">Portal do Ensino</a>
+                            <a href="@Url.Action("Biblioteca", "Servicos")">Biblioteca</a>
+                            <a href="@Url.Action("Museus", "Servicos")">Museus</a>
+                            <a href="https://login.microsoftonline.com" target="_blank">Webmail</a>
+                            <a href="http://sgti2.svdesdeva.com.br:7070/usuario/login" target="_blank">SGTI</a>
+                            <a href="@Url.Action("Index", "Oportunidades")">Oportunidades</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Ser
+                        <div class="sub-menu">
+                            <a href="@Url.Action("EnsinoReligioso", "Ser")">Serviço de Ensino Religioso</a>
+                            <a href="@Url.Action("Catequese", "Ser")">Catequese</a>
+                            <a href="@Url.Action("AnimacaoMissionaria", "Ser")">Animação Missionária</a>
+                            <a href="@Url.Action("EducacaoReligiosa", "Ser")">Aulas de Educação Religiosa</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Social
+                        <div class="sub-menu">
+                            <a href="@Url.Action("Index", "AssistenciaSocial")">Assistência Social</a>
+                        </div>
+                    </div>
+                    <div class="item">
+                        Fique Por Dentro
+                        <div class="sub-menu">
+                            <a href="@Url.Action("Index", "Noticias")">Notícias</a>
+                            <a href="@Url.Action("Index","Agenda")">Agenda</a>
+                            <a href="@Url.Action("Index", "Comunicado")">Comunicados</a>
+                        </div>
+                    </div>
+                    <a href="@Url.Action("Index", "Contato")" class="item">Contato</a>
+                    <a href="http://blog.academia.com.br/" target="_blank" class="item">Blog</a>
+                </nav>
+                <a href="http://www.academia.com.br/inscricoes/" target="_blank" class="link-matricula">Inscrições<br>2019 abertas</a>
+            </div>
+        </div>
+    </div>
+</header>
